@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="src/style.css">
+	<script src='http://code.jquery.com/jquery-2.1.4.min.js '></script>
+</head>
+
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<h2>This is a smaller Heading</h2>
+<p>This is a paragraph...<br>with break<br>lines</p>
+
+<h3> item list </h3>
+<ul>
+    <li>item 1</li>
+    <li style="color: blue">item 2 and style</li>
+    <li><a href="https://www.google.com">with link</a></li>
+</ul>
+
+<h3>An image with link</h3>
+<a href="https://github.com/gorisanson/pikachu-volleyball">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/E233%E7%B3%BB2000%E7%95%AA%E5%8F%B0%E3%83%9E%E3%83%8810%E7%B7%A8%E6%88%90.jpg">
+</a>
+
+<p class="large">style from "/style.css"</p>
+<p> </p>
+
+<script>
+$("h2").click(function(){
+	alert("尼哈哈");
+	$("h1").hide();
+});
+$("img").mouseenter(function(){
+	$("h3").fadeOut ();
+});
+
+</script>
+</body>
+</html>
